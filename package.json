@@ -1,7 +1,32 @@
 {
+  "name": "project-2-capsule",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
   "dependencies": {
+    "@clerk/clerk-js": "^4.38.3",
+    "@clerk/nextjs": "^4.16.2",
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.4",
+    "codehooks-crudlify": "^1.0.8",
+    "codehooks-js": "^1.0.10",
+    "jwt-decode": "^3.1.2",
+    "lodash": "^4.17.21",
+    "next": "^13.2.4",
     "next.js": "^1.0.3",
-    "npm": "^9.6.5",
-    "react-icons": "^4.8.0"
+    "quilljs": "^0.18.1",
+    "react": "18.2.0",
+    "react-bootstrap": "^2.7.3",
+    "react-bootstrap-icons": "^1.10.3",
+    "react-dom": "^18.2.0",
+    "react-icon": "^1.0.0",
+    "react-icons": "^4.8.0",
+    "react-quill": "^0.0.2",
+    "yup": "^1.0.2"
   }
 }
