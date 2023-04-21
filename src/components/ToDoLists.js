@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import ToDoItem from './ToDoItem'
 import { useAuth } from "@clerk/nextjs";
-import Loading from '../components/Loading.js'
+import Loading from './Loading.js'
 import { getUndoneTodoItems, getDoneTodoItems, addTodoItem } from "@/modules/Data";
 
 export default function ToDoList(props){

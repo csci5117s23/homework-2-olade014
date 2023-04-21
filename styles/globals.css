@@ -1,21 +1,5 @@
-/*---------------------------------------------*/
-/* fonts */
-/*---------------------------------------------*/
-@font-face{
-    font-family:vensfolk;
-    src:url(../../public/Vensfolk.otf)
-  }
-  
-  @font-face{
-    font-family:abeezee;
-    src:url(../../public/ABeeZee-Regular.ttf)
-  }
-  
-  @font-face{
-    font-family:mamba;
-    src:url(../../public/mamba.otf)
-  }
-  
+
+
   /*---------------------------------------------*/
   /* splash page */
   /*---------------------------------------------*/
@@ -32,65 +16,30 @@
     position: relative; 
     height:40vw;
     width:90vw;
-    /* max-width:2000px;  */
   }
   
   .splash-title1{
     color:#D5CAE4;
-    font-family: vensfolk;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 12vw;
     font-weight: bolder;
-    /* transform: translate(-8vw, 7vw); */
-    
     position:absolute;
     top:10vw;
     left:4vw;
-    /* text-shadow: 20px 40px 8px #D5CAE4; */
   }
   .splash-title2{
-    color:#e59462;
-    font-family: vensfolk;
+    color:blue;
+    font-family:  'Times New Roman', Times, serif;
     font-size: 12vw;
     font-weight: bolder;
-    /* transform: translate(6vw, 0vw); */
-  
     position:absolute;
     top: 18.5vw;
     right: 4vw;
-    /* text-shadow: 20px 40px 8px #D5CAE4; */
   }
   
-  .splash-purple-blob-container{
-    width: 65vw;
-    height: 65vw;
-    /* position: relative; */
-    /* transform: translate(25vw, -50vw); */
-    position:absolute;
-    top: 2vw; 
-    right: -12vw;
-  }
   
-  .splash-orange-blob-container{
-    width: 90vw;
-    height: 90vw;
-    /* position: relative; */
-    /* transform: translate(-30vw, -20vw); */
-    position:absolute;
-    top: -40vw; 
-    left: -40vw;
-  }
-  
-  /* .splash-signIn{
-    margin-bottom:5vw;
-  } */
-  
-  
-  /*---------------------------------------------*/
+
   /* todoItem */
-  /*---------------------------------------------*/
-  
-  
-  
   .todoItem-container{
     display: flex;
     flex-direction: row;
@@ -130,15 +79,12 @@
     vertical-align: middle;
   }
   
-  /* .todoItem-link{
-  } */
+  /* .todoItem-link*/
   
   .todoItem-name{
-    font-family: abeezee;
+    font-family:  'Times New Roman', Times, serif;
     font-size: 1.25em;
-    
-    /* overflow:hidden;
-    word-wrap: break-all; */
+  
   }
   
   .todo-done{
@@ -159,61 +105,7 @@
     height:1.5em;
   }
   
-  /* Extra small devices (phones, 600px and down) */
-  /* @media only screen and (max-width: 600px) {
-    .todoItem-name{
-      font-size:1.5em;
-    }
-    .todoItem-container img{
-      width:1.5em;
-      height:1.5em;
-    }
-    
-  } */
-  /* Small devices (portrait tablets and large phones, 600px and up)*/
-  /* @media only screen and (min-width: 600px) {
-    .todoItem-name{
-      font-size:1.5em;
-    }
-    .todoItem-container img{
-      width:1.5em;
-      height:1.5em;
-    }
-  }
-  /* Medium devices (landscape tablets, 768px and up) */
-  /* @media only screen and (min-width: 768px) {
-    .todoItem-name{
-      font-size:2em;
-    }
-    .todoItem-container img{
-      width:2em;
-      height:2em;
-    }
-  } */
-  /* Large devices (laptops/desktops, 992px and up) */
-  /* @media only screen and (min-width: 992px) {
-    .todoItem-name{
-      font-size:2em;
-    }
-    .todoItem-container img{
-      width:2em;
-      height:2em;
-    }
-  } */
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
-  /* @media only screen and (min-width: 1200px) {
-    .todoItem-name{
-      font-size:2em;
-    }
-    .todoItem-container img{
-      width:2em;
-      height:2em;
-    }
-  }   */
-  
-  /*---------------------------------------------*/
   /* todoList */
-  /*---------------------------------------------*/
   
   .todoList-ol{
     list-style-type: none;
@@ -229,7 +121,7 @@
   .todoList-add-input{
     background-color: #ffffff;
     color:#262626;
-    font-family: abeezee;
+    font-family:  'Times New Roman', Times, serif;
     font-size: 1.25em;
     padding-top: 0.3em;
     padding-bottom: 0.3em;
@@ -253,7 +145,7 @@
     background-color: #D5CAE4;
     color:#262626;
     min-width:5vw;
-    font-family: abeezee;
+    font-family:  'Times New Roman', Times, serif;
     font-size: 1.25em;
     padding-top: 0.3em;
     padding-bottom: 0.3em;
@@ -265,11 +157,9 @@
     border-radius:5vw;
   }
   
-  
-  /*---------------------------------------------*/
+
+
   /* navBar */
-  /*---------------------------------------------*/
-  
   .nav-container{
     display:flex;
     flex-direction: row;
@@ -282,8 +172,7 @@
   .nav-link{
     font-size: 1.5em;
     color:#262626;
-    /* background-color: #D5CAE4; */
-    font-family: vensfolk;
+    font-family:  'Times New Roman', Times, serif;
     text-decoration: none;
     padding:5px;
   }
@@ -303,10 +192,8 @@
     }
   }
   
-  
-  /*---------------------------------------------*/
   /* loading */
-  /*---------------------------------------------*/
+
   
   .loading-container{
     display: flex;
@@ -315,13 +202,12 @@
   }
   .loading-heading{
     color:#262626;
-    font-family: vensfolk;
+    font-family:  'Times New Roman', Times, serif;
     font-size: 1.5em;
   }
-  
-  /*---------------------------------------------*/
+
   /* 404 */
-  /*---------------------------------------------*/
+ 
   
   .flex-404{
     display:flex;
@@ -335,39 +221,11 @@
     position: relative; 
   }
   
-  .blob404-orange-container{
-    width: 120vw;
-    height: 120vw;
-    /* position: relative; */
-    /* transform: translate(-30vw, -20vw); */
-    position:absolute;
-    top: -70vw; 
-    left: -30vw;
-  }
-  .blob404-purple-container{
-    width: 110vw;
-    height: 110vw;
-    /* position: relative; */
-    /* transform: translate(-30vw, -20vw); */
-    position:absolute;
-    top: -30vw; 
-    left: 5vw;
-  }
-  .blob404-gray-container{
-    width: 100vw;
-    height: 100vw;
-    /* position: relative; */
-    /* transform: translate(-30vw, -20vw); */
-    position:absolute;
-    top: -70vw; 
-    left: 12vw;
-    
-  }
   .text404{
     z-index: 1;
-    font-family: vensfolk;
+    font-family:  'Times New Roman', Times, serif;
     color:#D5CAE4;
-    font-family: vensfolk;
+    font-family:  'Times New Roman', Times, serif;
     font-size: 8vw;
     font-weight: bolder;
     position:absolute;
@@ -377,9 +235,9 @@
   
   .small-text404{
     z-index: 1;
-    font-family: vensfolk;
+    font-family:  'Times New Roman', Times, serif;
     color:#484848;
-    font-family: vensfolk;
+    font-family:  'Times New Roman', Times, serif;
     font-size: 2vw;
     font-weight: bolder;
     position:absolute;
@@ -389,7 +247,7 @@
   
   .button404{
     z-index: 1;
-    font-family: vensfolk;
+    font-family:  'Times New Roman', Times, serif;
     color:#e59462;
     border-radius:5em;
     padding-top: 0.5em;
@@ -419,9 +277,7 @@
     }
   }
   
-  /*---------------------------------------------*/
   /* todo/[id] */
-  /*---------------------------------------------*/
   .todoId-edit-container{
     margin-top:1em;
     margin-right:1.3em;
@@ -435,12 +291,12 @@
     border-width: thin;
     padding:0.5em;
     margin-bottom: 1em;
-    font-family: abeezee;
+    font-family:  'Times New Roman', Times, serif;
     font-size: 1em;
   }
   
   .todoId-save-button{
-    font-family: vensfolk;
+    font-family:  'Times New Roman', Times, serif;
     font-size: x-large;
     background-color: #262626;
     color:#D5CAE4;
@@ -457,7 +313,7 @@
   }
   
   .todoId-done-button{
-    font-family: vensfolk;
+    font-family:  'Times New Roman', Times, serif;
     font-size: x-large;
     background-color: #D5CAE4;
     color:#262626;
@@ -472,7 +328,7 @@
   }
   
   .todoId-undone-button{
-    font-family: vensfolk;
+    font-family:  'Times New Roman', Times, serif;
     font-size: x-large;
     background-color: #262626;
     color:#D5CAE4;
