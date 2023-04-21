@@ -1,0 +1,487 @@
+/*---------------------------------------------*/
+/* fonts */
+/*---------------------------------------------*/
+@font-face{
+    font-family:vensfolk;
+    src:url(../../public/Vensfolk.otf)
+  }
+  
+  @font-face{
+    font-family:abeezee;
+    src:url(../../public/ABeeZee-Regular.ttf)
+  }
+  
+  @font-face{
+    font-family:mamba;
+    src:url(../../public/mamba.otf)
+  }
+  
+  /*---------------------------------------------*/
+  /* splash page */
+  /*---------------------------------------------*/
+  
+  .splash-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:10vh;
+  }
+  
+  .splash-header-container{
+    position: relative; 
+    height:40vw;
+    width:90vw;
+    /* max-width:2000px;  */
+  }
+  
+  .splash-title1{
+    color:#D5CAE4;
+    font-family: vensfolk;
+    font-size: 12vw;
+    font-weight: bolder;
+    /* transform: translate(-8vw, 7vw); */
+    
+    position:absolute;
+    top:10vw;
+    left:4vw;
+    /* text-shadow: 20px 40px 8px #D5CAE4; */
+  }
+  .splash-title2{
+    color:#e59462;
+    font-family: vensfolk;
+    font-size: 12vw;
+    font-weight: bolder;
+    /* transform: translate(6vw, 0vw); */
+  
+    position:absolute;
+    top: 18.5vw;
+    right: 4vw;
+    /* text-shadow: 20px 40px 8px #D5CAE4; */
+  }
+  
+  .splash-purple-blob-container{
+    width: 65vw;
+    height: 65vw;
+    /* position: relative; */
+    /* transform: translate(25vw, -50vw); */
+    position:absolute;
+    top: 2vw; 
+    right: -12vw;
+  }
+  
+  .splash-orange-blob-container{
+    width: 90vw;
+    height: 90vw;
+    /* position: relative; */
+    /* transform: translate(-30vw, -20vw); */
+    position:absolute;
+    top: -40vw; 
+    left: -40vw;
+  }
+  
+  /* .splash-signIn{
+    margin-bottom:5vw;
+  } */
+  
+  
+  /*---------------------------------------------*/
+  /* todoItem */
+  /*---------------------------------------------*/
+  
+  
+  
+  .todoItem-container{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+  
+  
+    border:#D5CAE4;
+    border-radius:5vw;
+    border-width:thin;
+    border-style:solid;
+  
+    margin-top:5px;
+    margin-bottom:5px;
+  
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left:10px;
+    padding-right:10px;
+  
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    
+    background-color: #ffffff;
+  }
+  
+  .todoItem-toggle{
+    margin-right:5px;
+  }
+  
+  
+  .todoItem-container input{
+    display:none;
+  }
+  
+  .todoItem-container img{
+    vertical-align: middle;
+  }
+  
+  /* .todoItem-link{
+  } */
+  
+  .todoItem-name{
+    font-family: abeezee;
+    font-size: 1.25em;
+    
+    /* overflow:hidden;
+    word-wrap: break-all; */
+  }
+  
+  .todo-done{
+    text-decoration: line-through;
+  }
+  
+  .todo-container-done{
+    background-color: #D5CAE4;
+  }
+  
+  .todoItem-container a{
+    text-decoration: none;
+    color: #262626;
+  }
+  
+  .todoItem-container img{
+    width:1.5em;
+    height:1.5em;
+  }
+  
+  /* Extra small devices (phones, 600px and down) */
+  /* @media only screen and (max-width: 600px) {
+    .todoItem-name{
+      font-size:1.5em;
+    }
+    .todoItem-container img{
+      width:1.5em;
+      height:1.5em;
+    }
+    
+  } */
+  /* Small devices (portrait tablets and large phones, 600px and up)*/
+  /* @media only screen and (min-width: 600px) {
+    .todoItem-name{
+      font-size:1.5em;
+    }
+    .todoItem-container img{
+      width:1.5em;
+      height:1.5em;
+    }
+  }
+  /* Medium devices (landscape tablets, 768px and up) */
+  /* @media only screen and (min-width: 768px) {
+    .todoItem-name{
+      font-size:2em;
+    }
+    .todoItem-container img{
+      width:2em;
+      height:2em;
+    }
+  } */
+  /* Large devices (laptops/desktops, 992px and up) */
+  /* @media only screen and (min-width: 992px) {
+    .todoItem-name{
+      font-size:2em;
+    }
+    .todoItem-container img{
+      width:2em;
+      height:2em;
+    }
+  } */
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  /* @media only screen and (min-width: 1200px) {
+    .todoItem-name{
+      font-size:2em;
+    }
+    .todoItem-container img{
+      width:2em;
+      height:2em;
+    }
+  }   */
+  
+  /*---------------------------------------------*/
+  /* todoList */
+  /*---------------------------------------------*/
+  
+  .todoList-ol{
+    list-style-type: none;
+    padding:0;
+  }
+  
+  .todoList-add-container{
+    display:flex;
+    flex-direction: row;
+    gap:0.2em;
+  }
+  
+  .todoList-add-input{
+    background-color: #ffffff;
+    color:#262626;
+    font-family: abeezee;
+    font-size: 1.25em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    padding-left:0.75em;
+    padding-right:0.5em;
+  
+    box-shadow: 0px 0px 0px transparent;
+  
+    border:#D5CAE4;
+    border-radius:5vw;
+    border-width:thin;
+    border-style:solid;
+    flex-grow: 1;
+  
+    text-shadow: 0px 0px 0px transparent;
+  
+    overflow-wrap: break-word;
+  }
+  
+  .todoList-add-button{
+    background-color: #D5CAE4;
+    color:#262626;
+    min-width:5vw;
+    font-family: abeezee;
+    font-size: 1.25em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    padding-left:0.5em;
+    padding-right:0.5em;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+    border-radius:5vw;
+  }
+  
+  
+  /*---------------------------------------------*/
+  /* navBar */
+  /*---------------------------------------------*/
+  
+  .nav-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border-bottom: #D5CAE4;
+    border-width:thin;
+    border-bottom-style:solid;
+  }
+  
+  .nav-link{
+    font-size: 1.5em;
+    color:#262626;
+    /* background-color: #D5CAE4; */
+    font-family: vensfolk;
+    text-decoration: none;
+    padding:5px;
+  }
+  
+  .logout{
+    background-color: #ffffff;
+    border-style: none;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .nav-link{
+      font-size: 1.5em;
+  
+    }
+    .nav-container{
+      justify-content: space-around;
+    }
+  }
+  
+  
+  /*---------------------------------------------*/
+  /* loading */
+  /*---------------------------------------------*/
+  
+  .loading-container{
+    display: flex;
+    justify-content: center;
+    padding:10px
+  }
+  .loading-heading{
+    color:#262626;
+    font-family: vensfolk;
+    font-size: 1.5em;
+  }
+  
+  /*---------------------------------------------*/
+  /* 404 */
+  /*---------------------------------------------*/
+  
+  .flex-404{
+    display:flex;
+    align-items: center;
+    height:100vh;
+    width:100%;
+  }
+  
+  .container-404{
+    width:100%;
+    position: relative; 
+  }
+  
+  .blob404-orange-container{
+    width: 120vw;
+    height: 120vw;
+    /* position: relative; */
+    /* transform: translate(-30vw, -20vw); */
+    position:absolute;
+    top: -70vw; 
+    left: -30vw;
+  }
+  .blob404-purple-container{
+    width: 110vw;
+    height: 110vw;
+    /* position: relative; */
+    /* transform: translate(-30vw, -20vw); */
+    position:absolute;
+    top: -30vw; 
+    left: 5vw;
+  }
+  .blob404-gray-container{
+    width: 100vw;
+    height: 100vw;
+    /* position: relative; */
+    /* transform: translate(-30vw, -20vw); */
+    position:absolute;
+    top: -70vw; 
+    left: 12vw;
+    
+  }
+  .text404{
+    z-index: 1;
+    font-family: vensfolk;
+    color:#D5CAE4;
+    font-family: vensfolk;
+    font-size: 8vw;
+    font-weight: bolder;
+    position:absolute;
+    top:-10vw;
+    left:4vw;
+  }
+  
+  .small-text404{
+    z-index: 1;
+    font-family: vensfolk;
+    color:#484848;
+    font-family: vensfolk;
+    font-size: 2vw;
+    font-weight: bolder;
+    position:absolute;
+    top:-1vw;
+    left:4.5vw;
+  }
+  
+  .button404{
+    z-index: 1;
+    font-family: vensfolk;
+    color:#e59462;
+    border-radius:5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.3em;
+    padding-left:0.8em;
+    padding-right:0.8em;
+    background-color: #ffffff;
+    font-family: vensfolk;
+    font-size: 4vw;
+    font-weight: bolder;
+    position:absolute;
+    top:12vw;
+    left:50vw;
+    text-decoration: none;
+  }
+  @media only screen and (max-width: 900px) {
+    .small-text404{
+      font-size: 4vw;;
+    }
+    .text404{
+      font-size: 9vw;
+    }
+    .button404{
+      font-size: 6vw;
+      top:24vw;
+      left:26vw;
+    }
+  }
+  
+  /*---------------------------------------------*/
+  /* todo/[id] */
+  /*---------------------------------------------*/
+  .todoId-edit-container{
+    margin-top:1em;
+    margin-right:1.3em;
+  }
+  
+  .todoId-edit-input{
+    width: 100%;
+    min-height:30vh;
+    border:#D5CAE4;
+    border-style: solid;
+    border-width: thin;
+    padding:0.5em;
+    margin-bottom: 1em;
+    font-family: abeezee;
+    font-size: 1em;
+  }
+  
+  .todoId-save-button{
+    font-family: vensfolk;
+    font-size: x-large;
+    background-color: #262626;
+    color:#D5CAE4;
+    padding-top:0.3em;
+    padding-bottom:0.2em;
+    padding-left:0.8em;
+    padding-right:0.8em;
+    margin-bottom: 0.5em;
+    margin-right: 0.3em;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+    border-radius:10px;
+  }
+  
+  .todoId-done-button{
+    font-family: vensfolk;
+    font-size: x-large;
+    background-color: #D5CAE4;
+    color:#262626;
+    padding-top:0.3em;
+    padding-bottom:0.2em;
+    padding-left:0.8em;
+    padding-right:0.8em;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+    border-radius:10px;
+  }
+  
+  .todoId-undone-button{
+    font-family: vensfolk;
+    font-size: x-large;
+    background-color: #262626;
+    color:#D5CAE4;
+    padding-top:0.3em;
+    padding-bottom:0.2em;
+    padding-left:0.8em;
+    padding-right:0.8em;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+    border-radius:10px;
+  }
