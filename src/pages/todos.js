@@ -1,4 +1,4 @@
-import ToDoList from '../components/ToDoList'
+import ToDoList from '../components/ToDoItem'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import { useAuth } from '@clerk/nextjs'

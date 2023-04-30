@@ -1,6 +1,6 @@
 import { ClerkProvider } from '@clerk/nextjs'
 import { light } from '@clerk/themes';
-import '../styles/globals.css'
+import '../../styles/globals.css';
 
 export default function App({ Component, pageProps }) {
   
@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }) {
             colorTextSecondary: '#000000',
             colorInputText: '#262626',
             colorInputBackground: '#ffffff',
-            fontFamily:'Source Sans Pro',
+            fontFamily: 'Poppins'
           },
           layout: {
             socialButtonsPlacement:'bottom'

@@ -8,6 +8,6 @@ export async function getTodoItems(authToken) {
   })
   return await result.json();
 }
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
+// Footer
+// © 2023 GitHub, Inc.
+// Footer navigation

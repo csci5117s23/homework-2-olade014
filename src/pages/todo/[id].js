@@ -2,7 +2,7 @@ import ToDoItem from '@/components/ToDoItem'
 import { useState, useEffect } from "react"
 
 import NavBar from '../../components/NavBar'
-import Loading from '../../components/Loading'
+import Loading from '../../components/loading'
 import { useRouter } from "next/router";
 import { useAuth } from "@clerk/nextjs";
 import { updateTodo, getTodoItemById } from "@/modules/Data";
@@ -94,3 +94,4 @@ export default function Todo() {
           </div>
         </>
       }
+}
