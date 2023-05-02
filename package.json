@@ -17,6 +17,7 @@
     "bootstrap-icons": "^1.10.4",
     "build": "^0.1.4",
     "clerk": "^0.6.1",
+    "codehooks": "^1.0.14",
     "codehooks-crudlify": "^1.0.8",
     "codehooks-js": "^1.0.10",
     "jwt-decode": "^3.1.2",
